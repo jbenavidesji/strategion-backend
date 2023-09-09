@@ -1,0 +1,11 @@
+{
+  "name": "postgres",
+  "version": "1.0.0",
+  "description": "Backend services for smart heating webapplicacion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julio Benavides",
+  "license": "ISC"
+}
