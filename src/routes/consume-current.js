@@ -3,8 +3,8 @@ const pool = require("../../db");
 const router = express.Router();
 router.get('', async (req, res) => {
     try {
-        const allConsumCurrent = await pool.query('SELECT * FROM tb_consum_current');
-        res.json(allConsumCurrent.rows);
+        const allConsumeCurrent = await pool.query('SELECT * FROM tb_consume_current');
+        res.json(allConsumeCurrent.rows);
     } catch (err) {
         console.error(err.message);
     }
