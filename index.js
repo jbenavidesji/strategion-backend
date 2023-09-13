@@ -19,6 +19,7 @@ const energyProviderRoute = require('./src/routes/energy-provider');
 const hintsRoute = require('./src/routes/hints');
 const notificationsRoute = require('./src/routes/notifications');
 const savingsRoute = require('./src/routes/savings');
+const savingsTotalRoute = require('./src/routes/savings-total');
 
 
 /**
@@ -36,6 +37,7 @@ app.use('/energy-provider',energyProviderRoute);
 app.use('/hints', hintsRoute);
 app.use('/notifications', notificationsRoute);
 app.use('/savings',savingsRoute);
+app.use('/savings-total',savingsTotalRoute);
 
 
 app.listen(5000, () => {
