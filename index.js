@@ -11,9 +11,9 @@ app.use(express.json()); //req.body
  */
 
 const authRoute = require('./src/routes/auth');
-const consumCurrentRoute = require('./src/routes/consum-current');
-const consumEnergyGermanyRoute = require('./src/routes/consum-energy-germany');
-const consumMeasurementsRoute = require('./src/routes/consum-measurements');
+const consumeCurrentRoute = require('./src/routes/consume-current');
+const consumeEnergyGermanyRoute = require('./src/routes/consume-energy-germany');
+const consumeMeasurementsRoute = require('./src/routes/consume-measurements');
 const energyGermanyRoute = require('./src/routes/energy-germany');
 const energyProviderRoute = require('./src/routes/energy-provider');
 const hintsRoute = require('./src/routes/hints');
@@ -28,11 +28,11 @@ const savingsRoute = require('./src/routes/savings');
 
 
 app.use('/auth', authRoute);
-app.use('/consumCurrent', consumCurrentRoute);
-app.use('/consumEnergyGermany',consumEnergyGermanyRoute);
-app.use('/consumMeasurements', consumMeasurementsRoute);
-app.use('/energyGermany', energyGermanyRoute);
-app.use('/energyProvider',energyProviderRoute);
+app.use('/consume-current', consumeCurrentRoute);
+app.use('/consume-energy-germany',consumeEnergyGermanyRoute);
+app.use('/consume-measurements', consumeMeasurementsRoute);
+app.use('/energy-germany', energyGermanyRoute);
+app.use('/energy-provider',energyProviderRoute);
 app.use('/hints', hintsRoute);
 app.use('/notifications', notificationsRoute);
 app.use('/savings',savingsRoute);
