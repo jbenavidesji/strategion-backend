@@ -17,6 +17,9 @@ const consumeMeasurementsRoute = require('./src/routes/consume-measurements');
 const energyGermanyRoute = require('./src/routes/energy-germany');
 const energyProviderRoute = require('./src/routes/energy-provider');
 const hintsRoute = require('./src/routes/hints');
+const measurementsElectricityRoute = require('./src/routes/measurements-electricity');
+const measurementsGasRoute = require('./src/routes/measurements-gas');
+const measurementsSolarRoute = require('./src/routes/measurements-solar');
 const notificationsRoute = require('./src/routes/notifications');
 const savingsRoute = require('./src/routes/savings');
 const savingsTotalRoute = require('./src/routes/savings-total');
@@ -35,10 +38,12 @@ app.use('/consume-measurements', consumeMeasurementsRoute);
 app.use('/energy-germany', energyGermanyRoute);
 app.use('/energy-provider',energyProviderRoute);
 app.use('/hints', hintsRoute);
+app.use('/measurements-electricity', measurementsElectricityRoute)
+app.use('/measurements-gas', measurementsGasRoute)
+app.use('/measurements-solar', measurementsSolarRoute)
 app.use('/notifications', notificationsRoute);
 app.use('/savings',savingsRoute);
 app.use('/savings-total',savingsTotalRoute);
-
 
 app.listen(5000, () => {
     console.log(`App running on port 5000`)
