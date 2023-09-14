@@ -3,11 +3,11 @@ const pool = require("../../db");
 const router = express.Router();
 router.get('', async (req, res) => {
     try {
-        const allConsumMeasurements = await pool.query('SELECT * FROM tb_measurements-solar');
-        res.json(allConsumMeasurements.rows);
+        const allMeasurementsSolar = await pool.query('SELECT * FROM tb_measurements-solar');
+        res.json(allMeasurementsSolar.rows);
     } catch (err) {
         console.error(err.message);
     }
 });
 
-module.exports = rout
+module.exports = router;
