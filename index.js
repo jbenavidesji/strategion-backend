@@ -11,6 +11,14 @@ app.use(express.json()); //req.body
  */
 
 const authRoute = require('./src/routes/auth');
+const cmBathroomRoute = require('.src/routes/cm-bathroom');
+const cmBedroomRoute = require('.src/routes/cm-bedroom');
+const cmBedroom2Route = require('.src/routes/cm-bedroom-2');
+const cmHallwayRoute = require('.src/routes/cm-hallway');
+const cmKitchenRoute = require('.src/routes/cm-kitchen');
+const cmLivingroomRoute = require('.src/routes/cm-livingroom');
+const cmLivingroom2Route = require('.src/routes/cm-livingroom-2');
+const cmWintergartenRoute = require('.src/routes/cm-wintergarten');
 const consumeCurrentRoute = require('./src/routes/consume-current');
 const consumeEnergyGermanyRoute = require('./src/routes/consume-energy-germany');
 const consumeMeasurementsRoute = require('./src/routes/consume-measurements');
@@ -32,6 +40,14 @@ const savingsTotalRoute = require('./src/routes/savings-total');
 
 
 app.use('/auth', authRoute);
+app.use('/cm-bathroom', cmBathroomRoute);
+app.use('/cm-bedroom', cmBedroomRoute);
+app.use('/cm-bedroom-2', cmBedroom2Route);
+app.use('/cm-hallway', cmHallwayRoute);
+app.use('/cm-kitchen', cmKitchenRoute);
+app.use('/cm-livingroom', cmLivingroomRoute);
+app.use('/cm-livingroom-2', cmLivingroom2Route);
+app.use('/cm-wintergarten', cmWintergartenRoute);
 app.use('/consume-current', consumeCurrentRoute);
 app.use('/consume-energy-germany',consumeEnergyGermanyRoute);
 app.use('/consume-measurements', consumeMeasurementsRoute);
