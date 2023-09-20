@@ -11,14 +11,14 @@ app.use(express.json()); //req.body
  */
 
 const authRoute = require('./src/routes/auth');
-const cmBathroomRoute = require('.src/routes/cm-bathroom');
-const cmBedroomRoute = require('.src/routes/cm-bedroom');
-const cmBedroom2Route = require('.src/routes/cm-bedroom-2');
-const cmHallwayRoute = require('.src/routes/cm-hallway');
-const cmKitchenRoute = require('.src/routes/cm-kitchen');
-const cmLivingroomRoute = require('.src/routes/cm-livingroom');
-const cmLivingroom2Route = require('.src/routes/cm-livingroom-2');
-const cmWintergartenRoute = require('.src/routes/cm-wintergarten');
+const cmBathroomRoute = require('./src/routes/cm-bathroom');
+const cmBedroomRoute = require('./src/routes/cm-bedroom');
+const cmBedroom2Route = require('./src/routes/cm-bedroom-2');
+const cmHallwayRoute = require('./src/routes/cm-hallway');
+const cmKitchenRoute = require('./src/routes/cm-kitchen');
+const cmLivingroomRoute = require('./src/routes/cm-livingroom');
+const cmLivingroom2Route = require('./src/routes/cm-livingroom-2');
+const cmWintergartenRoute = require('./src/routes/cm-wintergarten');
 const consumeCurrentRoute = require('./src/routes/consume-current');
 const consumeEnergyGermanyRoute = require('./src/routes/consume-energy-germany');
 const consumeMeasurementsRoute = require('./src/routes/consume-measurements');
