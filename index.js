@@ -28,7 +28,7 @@ const hintsRoute = require('./src/routes/hints');
 const measurementsElectricityRoute = require('./src/routes/measurements-electricity');
 const measurementsGasRoute = require('./src/routes/measurements-gas');
 const measurementsSolarRoute = require('./src/routes/measurements-solar');
-const measurementsTypeTotal = require('./src/routes/measurements_type_total');
+const measurementsTypeTotal = require('./src/routes/measurements-type-total');
 const notificationsRoute = require('./src/routes/notifications');
 const savingsRoute = require('./src/routes/savings');
 const savingsTotalRoute = require('./src/routes/savings-total');
@@ -60,7 +60,7 @@ app.use('/hints', hintsRoute);
 app.use('/measurements-electricity', measurementsElectricityRoute)
 app.use('/measurements-gas', measurementsGasRoute)
 app.use('/measurements-solar', measurementsSolarRoute)
-app.use('/measurements_type_total', measurementsTypeTotal)
+app.use('/measurements-type-total', measurementsTypeTotal)
 app.use('/notifications', notificationsRoute);
 app.use('/savings',savingsRoute);
 app.use('/savings-total',savingsTotalRoute);
