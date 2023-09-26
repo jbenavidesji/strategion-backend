@@ -31,6 +31,10 @@ const measurementsGasRoute = require('./src/routes/measurements-gas');
 const measurementsSolarRoute = require('./src/routes/measurements-solar');
 const measurementsTypeTotal = require('./src/routes/measurements-type-total');
 const notificationsRoute = require('./src/routes/notifications');
+const roomActionsRoute = require('./src/routes/room-actions');
+const roomHeatingProgramsRoute = require('./src/routes/room-heating-programs');
+const roomInformationRoute = require('./src/routes/room-information');
+const roomMeasurementsRoute = require('./src/routes/room-measurements');
 const savingsRoute = require('./src/routes/savings');
 const savingsTotalRoute = require('./src/routes/savings-total');
 
@@ -64,6 +68,10 @@ app.use('/measurements-gas', measurementsGasRoute)
 app.use('/measurements-solar', measurementsSolarRoute)
 app.use('/measurements-type-total', measurementsTypeTotal)
 app.use('/notifications', notificationsRoute);
+app.use('/room-actions', roomActionsRoute);
+app.use('/room-heating-programs', roomHeatingProgramsRoute);
+app.use('/room-information', roomInformationRoute);
+app.use('/room-measurements', roomMeasurementsRoute);
 app.use('/savings',savingsRoute);
 app.use('/savings-total',savingsTotalRoute);
 
