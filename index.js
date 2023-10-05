@@ -27,6 +27,7 @@ const energyConsumeCityCO2Route = require('./src/routes/energy-consume-city-co2'
 const energyConsumeCityHomeRoute = require('./src/routes/energy-consume-city-home');
 const energyConsumeCityTotalRoute = require('./src/routes/energy-consume-city-total');
 const energyGermanyRoute = require('./src/routes/energy-germany');
+const energyPriceGermanyRoute = require('./src/routes/energy-price-germany');
 const energyProviderRoute = require('./src/routes/energy-provider');
 const hintsRoute = require('./src/routes/hints');
 const measurementsElectricityRoute = require('./src/routes/measurements-electricity');
@@ -67,6 +68,7 @@ app.use('/energy-consume-city-co2', energyConsumeCityCO2Route);
 app.use('/energy-consume-city-home', energyConsumeCityHomeRoute);
 app.use('/energy-consume-city-total', energyConsumeCityTotalRoute);
 app.use('/energy-germany', energyGermanyRoute);
+app.use('/energy-price-germany', energyPriceGermanyRoute);
 app.use('/energy-provider',energyProviderRoute);
 app.use('/hints', hintsRoute);
 app.use('/measurements-electricity', measurementsElectricityRoute)
